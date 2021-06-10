@@ -1,0 +1,12 @@
+[pilotLamp]
+ats = 0
+LOCATION = 1, 2
+
+[pilotLamp]
+ats = 1
+;LOCATION = 2, 3
+LOCATION = 3, 4
+
+[pilotLamp]
+ats = 2
+LOCATION = 4, 5 ; hogehoge
