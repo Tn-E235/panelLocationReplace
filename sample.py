@@ -15,6 +15,7 @@ OFFSET_X = int(input())
 print('offset_y = ')
 OFFSET_Y = int(input())
 
+os.mkdir(OUTPUT_FILE_PATH)
 
 for f in FILES:
     FILE_R = open(f)
