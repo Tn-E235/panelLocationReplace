@@ -25,7 +25,7 @@ for f in FILES:
 
     for l in FILE_R:
         if l.find(';') == 0: 
-            FILE_W.write(l[:-1]+'\n')
+            FILE_W.write(l)
             continue
         if (l.lower()).find('location') >= 0:
             end = len(l)-1
@@ -38,7 +38,7 @@ for f in FILES:
             y = int(l[l.find(',')+1:end]) + OFFSET_Y
             FILE_W.write(SEARCH_WORD + ' = ' + str(x) + ', ' + str(y) + com + '\n')
         else:
-            FILE_W.write(l[:-1]+'\n')
+            FILE_W.write(l)
 
     FILE_R.close()
     FILE_W.close()
